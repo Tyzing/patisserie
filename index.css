@@ -1,0 +1,315 @@
+@font-face {
+    font-family: SousTitre;
+    src: url('/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Maj;
+    src: url('/fonts/Abel/Abel-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+section.page{
+    width: 100%;
+    height: 100vh;
+}
+
+#titre{
+    font-family: 'SousTitre';
+}
+
+div#photo{
+    background-image: url('/photo\ patisserie/imageFond.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    margin-top: -17vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#photo p{
+    font-size: 60px;
+    color: white;
+    padding: 0 0 50px 20px;
+}
+
+.titreNav{
+    font-size: 45px;
+    margin: 20px 0;
+    font-family: 'Maj';
+}
+
+.maj{
+    font-family: 'Maj';
+}
+
+.sousTitre{
+    font-family: 'SousTitre';
+    font-size: 40px;
+    margin: 15px 0;
+    color: #dfc287;
+    border-bottom: solid #ccd6a8 2px;
+    text-align: center;
+}
+
+.produits{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 25%;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    max-height: 270px;
+}
+
+.card .tCard{
+    margin: 10px 0;
+    font-size: 30px;
+    color: #dfc287;
+}
+
+.card .descriptionCard{
+    margin: 10px;
+    text-align: center;
+}
+
+.card .prix{
+    margin: 10px 0;
+}
+
+.card a{
+    margin: 10px 0;
+    text-decoration: none;
+    color: #ccd6a8;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid #ccd6a8 2px;
+}
+
+.card a:hover{
+    background-color: #ccd6a8;
+    color: white;
+}
+
+.transport{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.transport p{
+    margin: 20px 0;
+}
+
+.transport a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #ccd6a8;
+    padding: 10px 15px;
+    border: #ccd6a8 solid 2px;
+    border-radius: 30px;
+    margin: 20px 0;
+}
+
+.transport a:hover{
+    background-color: #ccd6a8;
+    color: white;
+}
+
+.avis{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+}
+
+#avisClients{
+    width: 40%;
+    margin: 40px 40px;
+}
+
+.avisDesClients{
+    width: 60%;
+    margin-top: 20px;
+}
+
+.avisDesClients .avi{
+    margin: 20px 100px 40px 0;
+    border-bottom: #ccd6a8 solid 2px;
+    padding-bottom: 15px;
+}
+
+.avi .auteurAvis{
+    color: #dfc287;
+    margin: 15px 0;
+}
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/photo\ patisserie/imageFin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    color: white;
+}
+
+footer img{
+    height: 50px;
+    margin-right: 15px;
+}
+
+.infos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.info{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-right: solid white 2px;
+}
+
+.info a{
+    text-decoration: none;
+    color: white;
+}
+
+.info > a:hover{
+    transform: translateY(-5px);
+    transition: all ease-in-out 0.2s;
+}
+
+#contact{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1290px) {
+    #contact{
+        height: 20%;
+    }
+    .infos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    footer{
+        font-size: 20px;
+    }
+    #contact{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    footer{
+        font-size: 15px;
+    }
+    #contact{
+        font-size: 30px;
+    }
+    footer img{
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #photo p{
+        font-size: 40px;
+        color: white;
+        padding: 0 0 80px 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .avis{
+        flex-direction: column;
+        align-items: center;
+    }
+    #avisClients{
+        width: 100%;
+        text-align: center;
+    }
+    .avisDesClients{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .avisDesClients .avi{
+        margin: 20px 100px 40px 100px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .avisDesClients .avi{
+        margin: 20px 50px 40px 50px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .card{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .card{
+        width: 80%;
+    }
+}

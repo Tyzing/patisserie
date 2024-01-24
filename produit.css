@@ -1,0 +1,97 @@
+
+.presentation{
+    width: 90%;
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom: solid #ccd6a8 2px;
+}
+.imgProduit{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.imgProduit img{
+    display: block;
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.descProduit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    max-width: 50%;
+    font-size: 20px;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.sousTitre{
+    color: black;
+    border-bottom: solid #dfc287 2px;
+}
+
+.descProduit .desc{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+img.un{
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.touteImage{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.touteImage img{
+    max-height: 300px;
+}
+
+.deux img{
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 1500px) {
+    .imgProduit{
+        width: 70%;
+    }
+    .descProduit{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .imgProduit{
+        width: 51%;
+    }
+    .descProduit{
+        width:45%;
+    }
+    .deux img{
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .presentation{
+        flex-direction: column;
+    }
+    .imgProduit{
+        width: 100%;
+    }
+    .descProduit{
+        width:100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    
+}
