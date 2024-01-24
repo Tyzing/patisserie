@@ -31,7 +31,7 @@ section.page{
 }
 
 div#photo{
-    background-image: url('/photo\ patisserie/imageFond.png');
+    background-image: url('/photoPatisserie/imageFond.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -191,7 +191,7 @@ main{
 footer{
     width: 100%;
     height: 100vh;
-    background-image: url('/photo\ patisserie/imageFin.png');
+    background-image: url('/photoPatisserie/imageFin.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
